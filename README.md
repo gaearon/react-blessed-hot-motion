@@ -6,7 +6,7 @@ This is a demo of a custom [React Blessed](https://github.com/Yomguithereal/reac
 
 If you still don’t believe it, yes, it’s a proper command line Node application (no DOM or JSDOM or anything—it uses [Blessed](https://github.com/chjj/blessed) under the hood) that is written with React and can use some tools and libraries from React ecosystem. And you can edit it live.
 
-It is based on [@jlongster](jlongster.com)’s amazing [Backend with Webpack](https://github.com/jlongster/backend-with-webpack) example that shows how to integrate how reloading into a Node (server) app.
+It is based on [@jlongster](jlongster.com)’s amazing [Backend with Webpack](https://github.com/jlongster/backend-with-webpack) example that shows how to integrate hot reloading into a Node (server) app.
 
 Of course, it is only possible thanks to [Yomguithereal](https://github.com/Yomguithereal)’s work on [https://github.com/Yomguithereal/react-blessed/](React Blessed).
 
