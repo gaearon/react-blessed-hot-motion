@@ -8,6 +8,8 @@ If you still don’t believe it, yes, it’s a proper command line Node applicat
 
 It is based on [@jlongster](jlongster.com)’s amazing [Backend with Webpack](https://github.com/jlongster/backend-with-webpack) example that shows how to integrate how reloading into a Node (server) app.
 
+Of course, it is only possible thanks to [Yomguithereal](https://github.com/Yomguithereal)’s work on [https://github.com/Yomguithereal/react-blessed/](React Blessed).
+
 ## Running
 
 ```
@@ -17,4 +19,4 @@ npm install
 npm start
 ```
 
-You may then edit files inside `src/components/*`. Not everything works, as [react-blessed](https://github.com/Yomguithereal/react-blessed/) is hardly feature complete, but you should be able to tweak colors and change text while the app is running.
+You may then edit files inside `src/components/*`. Not everything works, as [React Blessed](https://github.com/Yomguithereal/react-blessed/) is hardly feature complete, but you should be able to tweak colors and change text while the app is running.
