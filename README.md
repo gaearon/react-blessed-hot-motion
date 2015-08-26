@@ -1,14 +1,20 @@
+# react-blessed-hot-motion
 
-This is a very simple project to demo building backend apps with
-webpack. To use:
+This is a demo of a custom [React Blessed](https://github.com/Yomguithereal/react-blessed/) console renderer (warning: very early preview, many things don’t work) using [React Motion](https://github.com/chenglou/react-motion) for animation, and Webpack with [React Hot Loader](https://github.com/gaearon/react-hot-loader) for live editing.
 
-1. `npm install`
-2. `gulp run`
+![gif](http://i.imgur.com/2tdeBnm.gif)
 
-The latest version implements everything in [Backend Apps with Webpack: Part III](http://jlongster.com/Backend-Apps-with-Webpack--Part-III), allowing hot-patching of functions. This is also available on the frontend, so we've somewhat outgrown the name of this repo.
+If you still don’t believe it, yes, it’s a proper command line Node application (no DOM or JSDOM or anything—it uses [Blessed](https://github.com/chjj/blessed) under the hood) that is written with React and can use some tools and libraries from React ecosystem. And you can edit it live.
 
-This is meant to along with my posts. Each post corresponds to a branch:
+It is based on [@jlongster](jlongster.com)’s amazing [Backend with Webpack](https://github.com/jlongster/backend-with-webpack) example that shows how to integrate how reloading into a Node (server) app.
 
-* [Backend Apps with Webpack: Part I](http://jlongster.com/Backend-Apps-with-Webpack--Part-I) - part1
-* [Backend Apps with Webpack: Part II](http://jlongster.com/Backend-Apps-with-Webpack--Part-II) - part2a and part2b
-* [Live Editing with Webpack: Part III](http://jlongster.com/Backend-Apps-with-Webpack--Part-III) - part3 (or master)
+## Running
+
+```
+git clone https://github.com/gaearon/react-blessed-hot-motion.git
+cd react-blessed-hot-motion
+npm install
+npm start
+```
+
+You may then edit files inside `src/components/*`. Not everything works, as [react-blessed](https://github.com/Yomguithereal/react-blessed/) is hardly feature complete, but you should be able to tweak colors and change text while the app is running.
