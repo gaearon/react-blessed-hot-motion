@@ -8,7 +8,7 @@ If you still don’t believe it, yes, it’s a proper command line Node applicat
 
 It is based on [@jlongster](jlongster.com)’s amazing [Backend with Webpack](https://github.com/jlongster/backend-with-webpack) example that shows how to integrate hot reloading into a Node (server) app.
 
-Of course, it is only possible thanks to [Yomguithereal](https://github.com/Yomguithereal)’s work on [https://github.com/Yomguithereal/react-blessed/](React Blessed).
+Of course, it is only possible thanks to [Yomguithereal](https://github.com/Yomguithereal)’s work on [React Blessed](https://github.com/Yomguithereal/react-blessed/).
 
 ## Running
 
