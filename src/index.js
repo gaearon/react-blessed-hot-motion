@@ -1,9 +1,10 @@
 import React from 'react';
+import blessed from 'blessed';
 import { render } from 'react-blessed';
 import App from './components/App';
 
-// Render app
-const screen = render(<App />, {
+// Create our screen
+const screen = blessed.screen({
   autoPadding: true,
   smartCSR: true,
   title: 'React Blessed Hot Motion'
@@ -13,6 +14,9 @@ const screen = render(<App />, {
 screen.key(['escape', 'q', 'C-c'], function(ch, key) {
   return process.exit(0);
 });
+
+// Render React component into screen
+render(<App />, screen);
 
 // Listen to SIGUSR2 indicating hot updates:
 import './signal';
