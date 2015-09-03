@@ -9,7 +9,9 @@ It also demonstrates the use of [React Transform Babel plugin](https://github.co
 
 ![gif](http://i.imgur.com/2tdeBnm.gif)
 
-If you still don’t believe it, yes, it’s a proper command line Node application (no DOM or JSDOM or anything—it uses [Blessed](https://github.com/chjj/blessed) under the hood) that is written with React and can use some tools and libraries from React ecosystem. And you can edit it live.
+If you still don’t believe it, yes, it’s a proper command line Node application (no DOM or JSDOM or anything—it uses [Blessed](https://github.com/chjj/blessed) under the hood) that is written with React and can use some tools and libraries from React ecosystem. And you can edit it live. And even catch errors inside `render()`:
+
+![](https://camo.githubusercontent.com/1697c0611f83300b6225f9de007a45dd1d2d6f55/687474703a2f2f692e696d6775722e636f6d2f727339314c734e2e676966)
 
 It is based on [@jlongster](jlongster.com)’s amazing [Backend with Webpack](https://github.com/jlongster/backend-with-webpack) example that shows how to integrate hot reloading into a Node (server) app.
 
