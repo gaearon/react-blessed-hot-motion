@@ -1,6 +1,11 @@
 # react-blessed-hot-motion
 
-This is a demo of a custom [React Blessed](https://github.com/Yomguithereal/react-blessed/) console renderer (warning: very early preview, many things don’t work) using [React Motion](https://github.com/chenglou/react-motion) for animation, and Webpack with [React Hot Loader](https://github.com/gaearon/react-hot-loader) for live editing.
+This is a demo of a custom [React Blessed](https://github.com/Yomguithereal/react-blessed/) console renderer (warning: very early preview, many things don’t work) using [React Motion](https://github.com/chenglou/react-motion) for animation, and Webpack for listening to code hot updates.
+
+It also demonstrates the use of [React Transform Babel plugin](https://github.com/gaearon/babel-plugin-react-transform/) together with:
+
+* [react-transform-webpack-hmr](https://github.com/gaearon/react-transform-webpack-hmr) for live editing React components;
+* [react-transform-catch-errors](https://github.com/gaearon/react-transform-catch-errors) for catching errors inside `render()`.
 
 ![gif](http://i.imgur.com/2tdeBnm.gif)
 

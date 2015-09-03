@@ -18,6 +18,13 @@ screen.key(['escape', 'q', 'C-c'], function(ch, key) {
 // Render React component into screen
 render(<App />, screen);
 
+// Don't overwrite the screen
+console.log = function () { };
+console.warn = function () { };
+console.error = function () { }
+console.info = function () { };
+console.debug = function () { };
+
 // Listen to SIGUSR2 indicating hot updates:
 import './signal';
 

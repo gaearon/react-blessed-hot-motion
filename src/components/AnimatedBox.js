@@ -21,6 +21,28 @@ const colors = {
   base0F: '#d27b53'
 };
 
+class Square {
+  render() {
+    const { position } = this.props;
+    return (
+      <box top="center"
+           left={`${position}%`}
+           width="50%"
+           height="50%"
+           border={{type: 'line'}}
+           style={{
+             bg: interpolateColor(
+               position,
+               colors.base01,
+               colors.base0A,
+               0, 50
+             ),
+             border: {fg: 'blue'}}
+           } />
+    );
+  }
+}
+
 export default class AnimatedBox extends Component {
   constructor(props) {
     super(props);
@@ -37,25 +59,11 @@ export default class AnimatedBox extends Component {
       });
     }, 500);
   }
+
   render() {
     return (
       <Spring endValue={this.state.position}>
-        {val =>
-          <box top="center"
-               left={`${val}%`}
-               width="50%"
-               height="50%"
-               border={{type: 'line'}}
-               style={{
-                 bg: interpolateColor(
-                   val,
-                   colors.base01,
-                   colors.base0A,
-                   0, 50
-                 ),
-                 border: {fg: 'blue'}}
-               } />
-        }
+        {val => <Square position={val} />}
       </Spring>
     );
   }

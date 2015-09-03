@@ -33,7 +33,7 @@ var backendConfig = {
     loaders: [{
       test: /\.js$/,
       include: path.join(__dirname, 'src'),
-      loaders: ['react-hot', 'babel']
+      loaders: ['babel']
     }]
   },
   externals: nodeModules,
