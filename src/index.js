@@ -21,7 +21,7 @@ render(<App />, screen);
 // Don't overwrite the screen
 console.log = function () { };
 console.warn = function () { };
-console.error = function () { }
+console.error = function () { };
 console.info = function () { };
 console.debug = function () { };
 
