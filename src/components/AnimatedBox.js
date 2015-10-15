@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Spring } from 'react-motion';
+import { Motion, spring } from 'react-motion';
 import { rgbToHex, interpolateColor } from '../utils/colors';
 
 const colors = {
@@ -62,9 +62,9 @@ export default class AnimatedBox extends Component {
 
   render() {
     return (
-      <Spring endValue={this.state.position}>
-        {val => <Square position={val} />}
-      </Spring>
+      <Motion style={{x: spring(this.state.position)}}>
+        {val => <Square position={val.x} />}
+      </Motion>
     );
   }
 }
