@@ -59,6 +59,10 @@ webpack(backendConfig).watch(100, function(err, stats) {
       watch: ['foo/'],
       ext: 'noop',
       restartable: false
+    }).on('error', function(code) {
+      if (code !== 2) {
+        console.log('Exited with error code: ', code);
+      }
     });
   }
 

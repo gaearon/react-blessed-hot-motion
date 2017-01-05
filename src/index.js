@@ -12,7 +12,7 @@ const screen = blessed.screen({
 
 // Let user quit the app
 screen.key(['escape', 'q', 'C-c'], function(ch, key) {
-  return process.exit(0);
+  return process.exit(2);
 });
 
 // Render React component into screen
