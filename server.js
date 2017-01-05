@@ -57,7 +57,8 @@ webpack(backendConfig).watch(100, function(err, stats) {
       script: path.join(__dirname, 'build', 'backend'),
       ignore: ['*'],
       watch: ['foo/'],
-      ext: 'noop'
+      ext: 'noop',
+      restartable: false
     });
   }
 
