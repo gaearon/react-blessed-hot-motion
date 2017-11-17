@@ -21,7 +21,7 @@ const colors = {
   base0F: '#d27b53'
 };
 
-class Square {
+class Square extends Component {
   render() {
     const { position } = this.props;
     return (
